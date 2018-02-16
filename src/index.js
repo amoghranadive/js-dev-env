@@ -1,5 +1,4 @@
-import {getUsers} from './api/userApi';
-import {deleteUser} from './api/userApi';
+import {getUsers, deleteUser} from './api/userApi';
 
 getUsers().then(result => {
 	let users = "";

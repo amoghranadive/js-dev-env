@@ -60,3 +60,4 @@ typings/
 package-lock.json
 .vscode/settings.json
 src/api/db.json
+dist/
