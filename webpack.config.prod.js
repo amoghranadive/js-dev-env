@@ -34,7 +34,9 @@ export default {
 
 		// Create HTML file that includes reference to bundled JS
 		new HtmlWebpackPlugin({
+
 			template: 'src/index.html',
+
 			minify: {
 				removeComments: true,
 				collapseWhitespace: true,
@@ -46,7 +48,12 @@ export default {
 				minifyCSS: true,
 				minifyURLs: true
 			},
-			inject: true
+
+			inject: true,
+
+			// Properties defined here are available in index.html
+			// using htmlWebpackPlugin.options.varName
+			trackJSToken: '8d04319178ca42118c1db265be0079b9'
 		}),
 
 		//Eliminate duplicate packages when generating bundle
